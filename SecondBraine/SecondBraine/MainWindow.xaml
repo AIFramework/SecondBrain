@@ -1,0 +1,17 @@
+﻿<Window x:Class="SecondBraine.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Daily Planner" Height="274" Width="274">
+    <Grid Margin="10,0,0,3">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="127*"/>
+            <RowDefinition Height="128*"/>
+        </Grid.RowDefinitions>
+        <StackPanel VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,32,0,0" Grid.RowSpan="2">
+            <Button Content="План на день" Width="200" Height="29" Margin="10" Click="OpenDayPlanWindow"/>
+            <Button Content="План на месяц" Width="200" Height="24" Margin="10" Click="OpenMonthPlanWindow"/>
+            <Button Content="План на полгода" Width="200" Height="27" Margin="10" Click="OpenHalfYearPlanWindow"/>
+            <Button Content="План на год" Width="200" Height="32" Margin="10" Click="OpenYearPlanWindow"/>
+        </StackPanel>
+    </Grid>
+</Window>
